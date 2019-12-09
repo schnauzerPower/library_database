@@ -8,7 +8,7 @@ html
   body
     h1 Update Book
     |     
-    form(action="/books/book_detail/" + book.id method="post")
+    form(action="/books/" + book.id method="post")
       p
         label(for='title') Title
         |             
@@ -32,7 +32,7 @@ html
       p
         input(type='submit', value='Update Book')
     |     
-    form(method='post', action='/books/delete/' + book.id, onsubmit="return confirm('Do you really want to delete this book?');")
+    form(method='post', action='/books/' + book.id + '/delete', onsubmit="return confirm('Do you really want to delete this book?');")
       p
         a.button(href='/books') Cancel
       |         

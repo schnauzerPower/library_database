@@ -23,7 +23,7 @@ app.listen(3000, () => {
     console.log("Listening on localhost 3000");
 });
 
-(async () => {
+/*(async () => {
     await db.sequelize.sync({force: true});
     try {
         const book = await Book.create({
@@ -39,7 +39,7 @@ app.listen(3000, () => {
         console.error('Error connecting to the database: ', error);
     }
 
-})();
+})();*/
 
 module.exports = app;
 
