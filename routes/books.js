@@ -18,7 +18,7 @@ function asyncHandler(cb){
 
 //Home route
 router.get('/', asyncHandler(async(req, res) => {
-  res.redirect('/books');
+  res.redirect('/books/8');
 }));
 
 router.get('/books', asyncHandler(async(req, res) => {
@@ -44,8 +44,6 @@ router.post('/books/new', asyncHandler(async(req, res) => {
             throw error;
         }
     }
-    
-    
 }));
 
 
