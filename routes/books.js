@@ -18,7 +18,7 @@ function asyncHandler(cb){
 
 //Home route
 router.get('/', asyncHandler(async(req, res) => {
-  res.redirect('/books/8');
+  res.redirect('/books');
 }));
 
 router.get('/books', asyncHandler(async(req, res) => {
